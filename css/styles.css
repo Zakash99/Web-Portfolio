@@ -1,0 +1,988 @@
+/*  Color pallet: 
+
+black
+#d2b48c
+#483c32 
+#f9f1f1
+#72542D
+#00000080
+
+*/
+
+/*  Fonts: 
+"Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman";
+"Lucida Bright", Georgia, serif;
+Arial, sans-serif;
+"Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+
+*/
+
+/*  Header css */
+
+header {
+    background-color: #d2b48c;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman";
+    font-size: 50px;
+}
+
+nav ul a {
+    background-color: #E4D2BA;
+    color: black;
+    font-family: "Lucida Bright", Georgia, serif;
+    font-size: 20px;
+    border: 4px solid #72542D; 
+    padding: 5px 50px;
+    border-radius: 10px
+} 
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+}
+
+/*  Body/Main content css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f1f1;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: "Lucida Bright", Georgia, serif;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+p {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    line-height: 2rem;
+    font-size: 25px;
+    font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+.about {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.about h2 {
+    padding-bottom: 10px;
+}
+
+.about p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 450px; 
+    width: 950px;
+    text-align: center; 
+    padding: 0 20px; 
+    border: 8px solid #72542D; 
+    border-radius: 50px;
+    padding: 40px; 
+    background-color: #E4D2BA; 
+    margin: 100px; 
+    line-height: 1.4;
+    box-shadow: 0 0 200px #00000080; 
+}
+
+.hero {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.hero h2 {
+    padding-bottom: 10px;
+}
+
+.hero p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 150px; 
+    text-align: center; 
+    padding: 0 20px; 
+    border: 8px solid #72542D; 
+    border-radius: 50px;
+    padding: 40px; 
+    background-color: #E4D2BA;
+    margin: 10px; 
+    line-height: 1.4;
+    box-shadow: 0 0 300px #00000080; 
+}
+
+.home-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    padding-bottom: 50px;
+}
+
+.home-image img {
+    border: 8px solid #72542D; 
+    max-width: 300px; 
+    max-height: auto; 
+    box-shadow: 0 0 300px #00000080; 
+    border-radius: 20px;
+}
+
+button {
+    border-color: #483c32;
+    background-color: #d2b48c;
+    color: black;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+section {
+    margin: 2rem 0;
+    padding-bottom: 150px;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.categories button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid black; 
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+.portfolio-section {
+    display: none;
+}
+
+.portfolio-section:target {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+
+/* Contact Section */
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #72542D; 
+    border-radius: 30px;
+    padding: 50px;
+    background-color: #E4D2BA; 
+    width: 100%;
+    box-shadow: 0 0 30px #00000080; 
+}
+
+.contact form #message {
+    width: 380px;
+}
+
+.contact form button {
+    align-items: center;
+}
+
+
+/* Portfolio Section */
+
+.image-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-section {
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.img-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center; 
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    border: 8px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; 
+    width: 100%; 
+    max-width: 500px; 
+    height: 500px; 
+    margin: 0 auto; 
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+section #design.portfolio-section .image-item img {
+    border: 8px solid #72542D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; 
+    width: 100%; 
+    max-width: 500px; 
+    height: 600px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 200px #00000080; 
+}
+
+section #design.portfolio-section .image-item p {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+section #design.portfolio-section .image-item h4 {
+    font-size: 20px;
+}
+
+section #design.portfolio-section .image-item h5 {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-size: 13px;
+}
+
+section #photography.portfolio-section .image-item img {
+    border: 8px solid #72542D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; 
+    width: 100%; 
+    max-width: 700px; 
+    height: 600px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 200px #00000080; 
+}
+
+section #photography.portfolio-section .image-item p {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+section #photography.portfolio-section .image-item h4 {
+    font-size: 20px;
+}
+
+section #photography.portfolio-section .image-item h5 {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-size: 13px;
+}
+
+section #videography.portfolio-section .image-item img {
+    border: 8px solid #72542D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; 
+    width: 100%; 
+    max-width: 700px; 
+    height: 400px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 200px #00000080; 
+}
+
+section #videography.portfolio-section .image-item p {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+section #videography.portfolio-section .image-item h4 {
+    font-size: 20px;
+}
+
+section #videography.portfolio-section .image-item h5 {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-size: 13px;
+}
+
+
+/*  Footer css */
+
+footer {
+    background-color: #d2b48c;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+}
+
+footer p {
+    color: black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+}
+
+footer .social-links {  
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 10px
+}
+
+
+
+/* Tablet View */
+
+@media (max-width:80rem) {
+    header {
+        background-color: #d2b48c;
+        padding: 0.75rem;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+        color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman";
+        font-size: 30px;
+    }
+    
+    nav ul a {
+        background-color: #E4D2BA;
+        color: black;
+        font-family: "Lucida Bright", Georgia, serif;
+        font-size: 15px;
+        border: 4px solid #72542D; 
+        padding: 5px 30px;
+        border-radius: 5px
+    } 
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        
+        text-decoration: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f9f1f1;
+    }
+    
+    h2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-family: "Lucida Bright", Georgia, serif;
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 30px;
+        font-family: "Lucida Bright", Georgia, serif;
+    }
+    
+    p {
+        text-align: center;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        line-height: 1.5rem;
+        font-size: 20px;
+        font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    }
+    
+    .about {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .about h2 {
+        padding-bottom: 5px;
+    }
+    
+    .about p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 350px; 
+        width: 750px;
+        text-align: center; 
+        padding: 0 20px; 
+        border: 8px solid #72542D; 
+        border-radius: 50px;
+        padding: 40px; 
+        background-color: #E4D2BA; 
+        margin: 100px; 
+        line-height: 1.4;
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    .hero {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .hero h2 {
+        padding-bottom: 10px;
+    }
+    
+    .hero p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 150px; 
+        text-align: center; 
+        padding: 0 20px; 
+        border: 8px solid #72542D; 
+        border-radius: 50px;
+        padding: 40px; 
+        background-color: #E4D2BA;
+        margin: 10px; 
+        line-height: 1.4;
+        box-shadow: 0 0 300px #00000080; 
+    }
+    
+    .home-image {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 80%; 
+        padding-bottom: 50px;
+    }
+    
+    .home-image img {
+        border: 8px solid #72542D; 
+        max-width: 300px; 
+        max-height: auto; 
+        box-shadow: 0 0 300px #00000080; 
+        border-radius: 20px;
+    }
+    
+    button {
+        border-color: #483c32;
+        background-color: #d2b48c;
+        color: black;
+        border-radius: 10px;
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+    }
+    
+    section {
+        margin: 2rem 0;
+        padding-bottom: 150px;
+    }
+
+    section #design.portfolio-section .image-item img {
+        border: 8px solid #72542D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover; 
+        width: 100%; 
+        max-width: 300px; 
+        height: 500px; 
+        margin: 0 auto; 
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    section #design.portfolio-section .image-item p {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    
+    section #design.portfolio-section .image-item h4 {
+        font-size: 18px;
+    }
+    
+    section #design.portfolio-section .image-item h5 {
+        padding-top: 0px;
+        padding-bottom: 70px;
+        font-size: 12px;
+    }
+    
+    section #photography.portfolio-section .image-item img {
+        border: 8px solid #72542D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover; 
+        width: 100%; 
+        max-width: 300px; 
+        height: 400px; 
+        margin: 0 auto; 
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    section #photography.portfolio-section .image-item p {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    
+    section #photography.portfolio-section .image-item h4 {
+        font-size: 18px;
+    }
+    
+    section #photography.portfolio-section .image-item h5 {
+        padding-top: 0px;
+        padding-bottom: 70px;
+        font-size: 12px;
+    }
+    
+    section #videography.portfolio-section .image-item img {
+        border: 8px solid #72542D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover; 
+        width: 100%; 
+        max-width: 400px; 
+        height: 300px; 
+        margin: 0 auto; 
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    section #videography.portfolio-section .image-item p {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    
+    section #videography.portfolio-section .image-item h4 {
+        font-size: 18px;
+    }
+    
+    section #videography.portfolio-section .image-item h5 {
+        padding-top: 0px;
+        padding-bottom: 100px;
+        font-size: 12px;
+    }
+
+    button {
+        border-color: #483c32;
+        background-color: #d2b48c;
+        color: black;
+        border-radius: 10px;
+        height: 50px;
+        width: 150px;
+        font-size: 18px;
+    }
+
+}
+
+
+
+/* Mobile View */
+
+@media (max-width: 35rem) {
+    header {
+        background-color: #d2b48c;
+        padding: 0.75rem;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    header h1 {
+        margin: 0;
+        color: black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman";
+        font-size: 20px;
+    }
+    
+    nav ul a {
+        background-color: #E4D2BA;
+        color: black;
+        font-family: "Lucida Bright", Georgia, serif;
+        font-size: 14px;
+        border: 3px solid #72542D; 
+        padding: 5px 17px;
+        border-radius: 10px
+    } 
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 0.75rem;
+    }
+    
+    nav ul li a {
+        
+        text-decoration: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f9f1f1;
+    }
+    
+    h2 {
+        text-align: center;
+        padding-bottom: 8px;
+        font-family: "Lucida Bright", Georgia, serif;
+        padding-bottom: 25px;
+        font-size: 25px;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        padding-top: 25px;
+        font-family: "Lucida Bright", Georgia, serif;
+    }
+    
+    p {
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+        font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    }
+    
+    .about {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .about h2 {
+        padding-bottom: 5px;
+    }
+    
+    .about p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 650px; 
+        width: 350px;
+        text-align: center; 
+        padding: 0 20px; 
+        border: 8px solid #72542D; 
+        border-radius: 50px;
+        padding: 10px; 
+        background-color: #E4D2BA; 
+        margin: 10px; 
+        line-height: 1.4;
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    .hero {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .hero h2 {
+        padding-bottom: 10px;
+    }
+    
+    .hero p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 650px; 
+        text-align: center; 
+        padding: 0 20px; 
+        border: 8px solid #72542D; 
+        border-radius: 50px;
+        padding: 100px; 
+        background-color: #E4D2BA;
+        margin: 10px; 
+        line-height: 1.4;
+        box-shadow: 0 0 300px #00000080; 
+    }
+    
+    .home-image {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 60%; 
+        padding-bottom: 50px;
+    }
+    
+    .home-image img {
+        border: 8px solid #72542D; 
+        max-width: 200px; 
+        max-height: auto; 
+        box-shadow: 0 0 300px #00000080; 
+        border-radius: 20px;
+    }
+    
+    section {
+        margin: 2rem 0;
+        padding-bottom: 150px;
+    }
+
+    section #design.portfolio-section .image-item img {
+        border: 5px solid #72542D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover; 
+        max-width: 170px; 
+        height: 300px; 
+        margin: 0 auto; 
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    section #design.portfolio-section .image-item p {
+        padding-top: 5px;
+        padding-bottom: 0px;
+        font-size: 12px;
+    }
+    
+    section #design.portfolio-section .image-item h4 {
+        font-size: 14px;
+    }
+    
+    section #design.portfolio-section .image-item h5 {
+        padding-top: 0px;
+        padding-bottom: 70px;
+        font-size: 10px;
+    }
+    
+    section #photography.portfolio-section .image-item img {
+        border: 5px solid #72542D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover; 
+        max-width: 170px; 
+        height: 250px; 
+        margin: 0 auto; 
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    section #photography.portfolio-section .image-item p {
+        padding-top: 5px;
+        padding-bottom: 0px;
+        font-size: 14px;
+    }
+    
+    section #photography.portfolio-section .image-item h4 {
+        font-size: 16px;
+    }
+    
+    section #photography.portfolio-section .image-item h5 {
+        padding-top: 0px;
+        padding-bottom: 50px;
+        font-size: 10px;
+    }
+    
+    section #videography.portfolio-section .image-item img {
+        border: 5px solid #72542D;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover; 
+        max-width: 170px; 
+        height: 200px; 
+        margin: 0 auto; 
+        box-shadow: 0 0 200px #00000080; 
+    }
+    
+    section #videography.portfolio-section .image-item p {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 14px;
+    }
+    
+    section #videography.portfolio-section .image-item h4 {
+        font-size: 14px;
+    }
+    
+    section #videography.portfolio-section .image-item h5 {
+        padding-top: 0px;
+        padding-bottom: 50px;
+        font-size: 12px;
+    }
+
+    button {
+        border-color: #483c32;
+        background-color: #d2b48c;
+        color: black;
+        border-radius: 10px;
+        height: 50px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .contact form {
+        display: flex;
+        justify-content: center;
+        border: 5px solid #72542D; 
+        border-radius: 30px;
+        padding: 50px;
+        background-color: #E4D2BA; 
+        width: 70%;
+        box-shadow: 0 0 30px #00000080; 
+    }
+    
+    .contact form #message {
+        width: 240px;
+    }
+    
+    .contact form button {
+        align-items: center;
+    }
+
+    footer {
+        background-color: #d2b48c;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        padding-top: 0px;
+        padding-bottom: 0px; 
+    }
+    
+    footer p {
+        color: black;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 14px;
+    }
+    
+    footer .social-links {  
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 1px;
+        height: 80px;
+        width: 80px;
+        padding-left: 180px;
+        
+    }
+}

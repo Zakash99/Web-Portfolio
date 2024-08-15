@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Work</h2>
+            <div class="categories">
+                <button onclick="showSection('photography')">Photography</button>
+                <button onclick="showSection('design')">Design</button>
+                <button onclick="showSection('videography')">Videography</button>
+            </div>
+
+            <div id="design" class="portfolio-section">
+                <h3>Design Projects</h3>
+                <p>Click on the image <br> to view them in full scale!</p>
+                <div class="img-box">
+                    <div class="image-item">
+                        <h4>Coffee <br> Infographic Poster</h4>
+                        <img src="../img/coffee-infographic-poster.JPG" alt="Design Project 1">
+                        <p>Above is an infographic poster showcasing information about Coffee, it was designed using Adobe Illustrator</p>
+                        <h5>(Designed in summer of 2024)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Interactive PDF Form <br> (Green Theme)</h4>
+                        <img src="../img/Interactive PDF.jpg" alt="Design Project 2">
+                        <p>Above is a interactive PDF form which can be used for companies to fill out forms and submit the form which would send the form to the required email address. This was created by Adobe InDesign</p>
+                        <h5>(Designed in summer of 2023)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Mushroom <br> Infographic Poster</h4>
+                        <img src="../img/mushroom-info.jpg" alt="Design Project 3">
+                        <p>Above is an infographic poster showcasing information about different types of mushrooms, it was designed using Adobe Illustrator</p>
+                        <h5>(Designed in spring of 2023)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Interactive PDF Form <br> (Gaming Theme)</h4>
+                        <img src="../img/new-pdf-form.png" alt="Design Project 4">
+                        <p>Above is an example of an interactive PDF form which can also be used for companies to create forms for their customers</p>
+                        <h5>(Designed in summer of 2024)</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="image-modal" class="image-modal" style="display:none;">
+                <span class="close-button">&times;</span>
+                <img class="modal-content" id="full-image">
+            </div>
+            <div id="photography" class="portfolio-section" style="display:none;">
+                <h3>Photography Projects</h3>
+                <p>Take a breif look at my 4 favorite pictures <br> that I took in the past 2 years</p>
+                <div class="img-box">
+                    <div class="image-item">
+                        <h4>Winter Silhouette</h4>
+                        <img src="../img/man-standing-img.png" alt="Photography Project 1">
+                        <p>This silhouette image was taken using a Cannon Camera which was taken 2 hours before sunset, the camera had to be in a specified setting to have this effect</p>
+                        <h5>(Date taken: Feburary, 2023)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Falling Trees</h4>
+                        <img src="../img/tree-sun.png" alt="Photography Project 2">
+                        <p>The image Above was taken using an Iphone camera, this image is one of my favorites due to the colors and the season it was taken in</p>
+                        <h5>(Date taken: October, 2022)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Sunset Man</h4>
+                        <img src="../img/sunset-man.png" alt="Photography Project 3">
+                        <p>This is also another silhouette image taken during the golden hour before sunset, and it was also taken with a Cannon Camera with manual settings</p>
+                        <h5>(Date taken: Feburary, 2023)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Pine Silhouette</h4>
+                        <img src="../img/tree-img.png" alt="Photography Project 4">
+                        <p>As you can tell, im a huge fan of silhouette images, this is also another silhouette of a pine tree during the golden hour before sunset</p>
+                        <h5>(Date taken: March, 2023)</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="videography" class="portfolio-section" style="display:none;">
+                <h3>Videography Projects</h3>
+                <p>Click on the image to redirect you <br> to the videos on YouTube!</p>
+                <div class="img-box">
+                    <div class="image-item">
+                        <h4>Motion Graphics</h4>
+                        <a href="https://www.youtube.com/watch?v=pfSXt7WZCRI" target="_blank">
+                            <img src="../img/cv-video-img.png" alt="Videography Project 1">
+                        </a>
+                        <p>This was a motion graphics video created by Adobe After Effects, this 1 minute video was made to showcase my work using After Effects</p>
+                        <h5>(Date Made: July, 2023)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Text Over Video</h4>
+                        <a href="https://www.youtube.com/watch?v=P0iIKxJKt7Q" target="_blank">
+                            <img src="../img/jeddah-img.png" alt="Videography Project 2">
+                        </a>
+                        <p>This 3 second video was created using Davinci Resolve, This was inspired by the movie 1917 which i replicated the same effect in my video</p>
+                        <h5>(Date Made: March, 2024)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>Transitions in Affect</h4>
+                        <a href="https://www.youtube.com/watch?v=VIgHCYu_WHI" target="_blank">
+                            <img src="../img/client-img.png" alt="Videography Project 3">
+                        </a>
+                        <p>This video was eddited and filmed by me, the video's purpose was to showcase the different types of transitions for my client which was Algonquin College. The video was shot using a Cannon Camera, lighting setup and a gimple to keep the video steady</p>
+                        <h5>(Date Made: August, 2023)</h5>
+                    </div>
+                    <div class="image-item">
+                        <h4>The Relaxing Robbery</h4>
+                        <a href="https://www.youtube.com/watch?v=yZ0wgz3BqxI" target="_blank">
+                            <img src="../img/robbing-img.png" alt="Videography Project 4">
+                        </a>
+                        <p>This promotional video was made for a mattress company "Foamzone" which wanted to have a comedy themed video of a robbery gone comfortable</p>
+                        <h5>(Date Made: April, 2024)</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zakaria Salhi. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/zaki_designs_24/" target="_blank">
+                <img src="../img/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/zakaria-salhi-film-maker-designer/" target="_blank">
+                <img src="../img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
